@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33424.131
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WedukaATV", "WedukaATV\WedukaATV.csproj", "{E40CED21-96AB-4EDE-845D-AC1B3B92394D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestesWeduka", "TestesWeduka\TestesWeduka.csproj", "{B7C31484-64A5-4C2F-A9E7-1E080FC2DA5E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E40CED21-96AB-4EDE-845D-AC1B3B92394D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E40CED21-96AB-4EDE-845D-AC1B3B92394D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E40CED21-96AB-4EDE-845D-AC1B3B92394D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E40CED21-96AB-4EDE-845D-AC1B3B92394D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7C31484-64A5-4C2F-A9E7-1E080FC2DA5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7C31484-64A5-4C2F-A9E7-1E080FC2DA5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7C31484-64A5-4C2F-A9E7-1E080FC2DA5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7C31484-64A5-4C2F-A9E7-1E080FC2DA5E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {403C89C9-B6E4-45D0-99DE-EF3DC4AC8B18}
+	EndGlobalSection
+EndGlobal

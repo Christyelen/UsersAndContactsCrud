@@ -1,0 +1,46 @@
+version: "3.1"
+
+services:
+  mysql:
+    container_name: "mysql"
+    image: mysql:latest
+    restart: always
+    ports:
+      - "127.0.0.1:3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: "walter:white"
+      MYSQL_DATABASE: "weduka_db"
+      MYSQL_USER: "walter"
+      MYSQL_PASSWORD: "white"
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  front-end:
+    container_name: "front-end"
+    build:
+      context: ./weduka-front
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    depends_on:
+      mysql:
+        condition: service_healthy
+
+  back-end:
+    container_name: "back-end"
+    build:
+      context: ./weduka-back
+      dockerfile: Dockerfile
+    ports:
+      - "4000:4000"
+    depends_on:
+      mysql:
+        condition: service_healthy
+    environment:
+      DB_HOST: mysql
+      DB_USER: walter
+      DB_PASSWORD: white
+      DB_NAME: weduka_db
